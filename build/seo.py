@@ -23,7 +23,7 @@ PAGES = {
     "ai-opportunity-assessment.html": (
         f"AI Opportunity Assessment for Singapore SMEs | {BRAND}",
         "A fixed-price review of your key workflows, with a written answer on where AI could help, where it couldn't, and what to do next. Tool-neutral.",
-        ["AI opportunity assessment", "AI readiness assessment Singapore", "AI use case discovery", "AI for SMEs", "AI consultant Singapore", "AI fit check"],
+        ["AI opportunity assessment", "AI readiness assessment Singapore", "AI use case discovery", "AI for SMEs", "AI consultant Singapore", "AI reality check"],
     ),
     "discovery-sprint.html": (
         f"Discovery & Design Sprints in Singapore | {BRAND}",

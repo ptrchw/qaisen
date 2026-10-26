@@ -717,4 +717,4 @@ ol.squiggle-stages { list-style: none; padding: 0; margin: 0; }
 @media (hover: hover) { .also-card:hover { box-shadow: 0 0 0 1px var(--accent), 0 16px 40px rgba(20, 10, 50, .12); } .also-card:hover .also-go { transform: translateX(3px); } }
 .also-card:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
 @media (max-width: 479px) { .also-card { flex-direction: column; align-items: flex-start; } .also-go { display: none; } }
-#fit-check .hero-grid { align-items: center; }
+#reality-check .hero-grid { align-items: center; }
