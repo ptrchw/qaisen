@@ -702,3 +702,4 @@ html.lenis, html.lenis body { height: auto; }
 /* QAISEN wordmark (Zen Dots) — stands in for the logo until the logomark is ready */
 .wordmark { font-family: "Zen Dots", "Montserrat", system-ui, sans-serif; font-weight: 400; font-size: 1.375rem; letter-spacing: .06em; line-height: 1; color: var(--ink); }
 .site-footer .wordmark { color: inherit; }
+.site-header .wordmark { font-size: 1.65rem; }
