@@ -5,7 +5,7 @@ var SITE = {
   calendly: 'https://calendly.com/your-handle/20min',   // TODO: your Calendly event link
   whatsapp: '6500000000',                                // TODO: business WhatsApp number, digits only with country code
   whatsappText: 'Hi, I found your site and would like to talk about a UX project.',
-  email: 'hello@yourbusiness.sg',                        // TODO: business email
+  email: 'hello@qaisen.com',                             // business email
   linkedin: 'https://www.linkedin.com/in/ptrchw/',
   portfolio: 'https://example.com/portfolio'             // TODO: portfolio URL once it is on GitHub Pages
 };

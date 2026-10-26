@@ -7,7 +7,8 @@ import seo
 OUT = pathlib.Path(sys.argv[1])
 PAGES_DIR = pathlib.Path(__file__).parent / "pages"
 
-BIZ = '<span class="ph">[Business Name]</span>'
+BIZ = "QAISEN"
+WORDMARK = '<span class="wordmark">QAISEN</span>'
 
 NAV = [
     ("workshops.html", "Workshops"),
@@ -45,6 +46,7 @@ def head(title, desc, extra=""):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Dots&amp;text=QAISEN&amp;display=swap">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -59,7 +61,7 @@ def header(current):
     items = "\n          ".join(items)
     return f"""<header class="site-header">
   <div class="wrap header-inner">
-    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span>{BIZ}</a>
+    <a class="brand" href="index.html" aria-label="QAISEN home">{WORDMARK}</a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
       <span class="nav-toggle-bars" aria-hidden="true"><span></span></span><span class="nav-toggle-label">Menu</span>
     </button>
@@ -79,7 +81,7 @@ def footer():
   <div class="wrap">
     <div class="footer-grid">
       <div class="stack">
-        <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span>{BIZ}</a>
+        <a class="brand" href="index.html" aria-label="QAISEN home">{WORDMARK}</a>
         <p class="muted small" style="max-width:42ch">Human-centred design and GenAI capability for startups, SMEs and ICT teams in Singapore.</p>
       </div>
       <div>

@@ -6,9 +6,9 @@ every page, the sitemap and the structured data update on the next build.
 """
 import html, json, re
 
-SITE_URL = "https://www.example.com"   # TODO: final domain, no trailing slash
-BIZ_NAME = "[Business Name]"           # TODO: e.g. "Qaisen Pte. Ltd." once registered
-BRAND = "[Business Name]"              # TODO: short brand used in page titles, e.g. "Qaisen"
+SITE_URL = "https://qaisen.com"         # final domain, no trailing slash
+BIZ_NAME = "QAISEN"                    # TODO: registered name, e.g. "Qaisen Pte. Ltd.", once incorporated
+BRAND = "QAISEN"                       # brand used in page titles
 LIVE = False   # TODO: set True at launch. While False, search engines are told not to index the site
 FOUNDER = "Peter Chow"
 LINKEDIN = "https://www.linkedin.com/in/ptrchw/"
