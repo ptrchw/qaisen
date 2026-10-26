@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" font-family="Montserrat, Arial, sans-serif">
+  <defs>
+    <filter id="s" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#0B0620" flood-opacity=".35"/></filter>
+  </defs>
+  <!-- question card -->
+  <g filter="url(#s)">
+    <rect x="70" y="56" width="330" height="330" rx="18" fill="#FFFFFF"/>
+  </g>
+  <text x="96" y="92" fill="#8B7FB0" font-size="11" font-weight="700" letter-spacing="1">QUESTION 4 OF 8</text>
+  <rect x="96" y="104" width="278" height="6" rx="3" fill="#ECE8F5"/>
+  <rect x="96" y="104" width="139" height="6" rx="3" fill="#8B6CFF"/>
+  <rect x="96" y="132" width="230" height="13" rx="6.5" fill="#1B1433"/>
+  <rect x="96" y="153" width="170" height="13" rx="6.5" fill="#1B1433"/>
+  <g fill="#F5F3FA" stroke="#DCD6EA">
+    <rect x="96" y="186" width="278" height="40" rx="10"/>
+    <rect x="96" y="286" width="278" height="40" rx="10"/>
+  </g>
+  <rect x="96" y="236" width="278" height="40" rx="10" fill="#F1ECFF" stroke="#8B6CFF" stroke-width="2"/>
+  <g fill="none" stroke="#B9B2CC" stroke-width="2"><circle cx="118" cy="206" r="8"/><circle cx="118" cy="306" r="8"/></g>
+  <circle cx="118" cy="256" r="8" fill="none" stroke="#8B6CFF" stroke-width="2"/><circle cx="118" cy="256" r="4" fill="#8B6CFF"/>
+  <g fill="#B9B2CC"><rect x="136" y="202" width="150" height="8" rx="4"/><rect x="136" y="302" width="120" height="8" rx="4"/></g>
+  <rect x="136" y="252" width="180" height="8" rx="4" fill="#6A55B8"/>
+  <rect x="96" y="340" width="110" height="30" rx="15" fill="#1B1433"/>
+  <rect x="122" y="352" width="58" height="6" rx="3" fill="#FFFFFF"/>
+  <!-- result card -->
+  <g filter="url(#s)">
+    <rect x="356" y="128" width="226" height="210" rx="16" fill="#1B1433"/>
+    <text x="376" y="160" fill="#FFFFFF" font-size="14" font-weight="700">Your result</text>
+    <path d="M405 252a64 64 0 0 1 128 0" fill="none" stroke="#3A3058" stroke-width="14" stroke-linecap="round"/>
+    <path d="M405 252a64 64 0 0 1 104-50" fill="none" stroke="#5BC8F0" stroke-width="14" stroke-linecap="round"/>
+    <text x="469" y="244" fill="#FFFFFF" font-size="16" font-weight="700" text-anchor="middle">Likely fit</text>
+    <rect x="376" y="276" width="186" height="1" fill="#3A3058"/>
+    <text x="376" y="300" fill="#A99BD6" font-size="10.5" font-weight="600">Next step</text>
+    <text x="376" y="320" fill="#FFFFFF" font-size="12" font-weight="700">A 20-minute call</text>
+  </g>
+</svg>

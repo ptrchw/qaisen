@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" font-family="Montserrat, Arial, sans-serif">
+  <defs>
+    <filter id="s" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#0B0620" flood-opacity=".35"/></filter>
+  </defs>
+  <!-- workflow map -->
+  <g filter="url(#s)">
+    <rect x="52" y="60" width="372" height="320" rx="18" fill="#FFFFFF"/>
+    <rect x="52" y="60" width="372" height="44" rx="18" fill="#F1EEF8"/>
+    <rect x="52" y="86" width="372" height="18" fill="#F1EEF8"/>
+    <text x="76" y="88" fill="#1B1433" font-size="13" font-weight="700">Key workflows</text>
+  </g>
+  <g font-size="11" font-weight="700" fill="#1B1433">
+    <text x="76" y="138">Quotes</text>
+    <text x="76" y="218">Invoices</text>
+    <text x="76" y="298">Enquiries</text>
+  </g>
+  <g fill="#F5F3FA" stroke="#DCD6EA">
+    <rect x="76" y="148" width="72" height="34" rx="9"/><rect x="170" y="148" width="72" height="34" rx="9"/><rect x="264" y="148" width="72" height="34" rx="9"/>
+    <rect x="76" y="228" width="72" height="34" rx="9"/><rect x="170" y="228" width="72" height="34" rx="9"/><rect x="264" y="228" width="72" height="34" rx="9"/>
+    <rect x="76" y="308" width="72" height="34" rx="9"/><rect x="170" y="308" width="72" height="34" rx="9"/><rect x="264" y="308" width="72" height="34" rx="9"/>
+  </g>
+  <g fill="#B9B2CC">
+    <rect x="88" y="161" width="46" height="8" rx="4"/><rect x="182" y="161" width="40" height="8" rx="4"/><rect x="276" y="161" width="48" height="8" rx="4"/>
+    <rect x="88" y="241" width="40" height="8" rx="4"/><rect x="182" y="241" width="48" height="8" rx="4"/><rect x="276" y="241" width="42" height="8" rx="4"/>
+    <rect x="88" y="321" width="48" height="8" rx="4"/><rect x="182" y="321" width="42" height="8" rx="4"/><rect x="276" y="321" width="46" height="8" rx="4"/>
+  </g>
+  <g stroke="#CFC9DE" stroke-width="2" fill="none">
+    <path d="M148 165h22M242 165h22M148 245h22M242 245h22M148 325h22M242 325h22"/>
+  </g>
+  <!-- highlighted step -->
+  <rect x="170" y="148" width="72" height="34" rx="9" fill="none" stroke="#8B6CFF" stroke-width="3"/>
+  <rect x="264" y="228" width="72" height="34" rx="9" fill="none" stroke="#FFB020" stroke-width="3"/>
+  <!-- verdict card -->
+  <g filter="url(#s)">
+    <rect x="368" y="104" width="222" height="236" rx="16" fill="#1B1433"/>
+    <text x="388" y="136" fill="#FFFFFF" font-size="14" font-weight="700">Where AI fits</text>
+    <g font-size="12" font-weight="700">
+      <rect x="388" y="154" width="182" height="36" rx="10" fill="#2A2148"/>
+      <circle cx="406" cy="172" r="7" fill="#5BC8F0"/>
+      <text x="422" y="176" fill="#FFFFFF">Quotes</text>
+      <text x="560" y="176" fill="#5BC8F0" text-anchor="end">Fits</text>
+      <rect x="388" y="198" width="182" height="36" rx="10" fill="#2A2148"/>
+      <circle cx="406" cy="216" r="7" fill="#FFB020"/>
+      <text x="422" y="220" fill="#FFFFFF">Invoices</text>
+      <text x="560" y="220" fill="#FFB020" text-anchor="end">Partly</text>
+      <rect x="388" y="242" width="182" height="36" rx="10" fill="#2A2148"/>
+      <circle cx="406" cy="260" r="7" fill="#A99BD6"/>
+      <text x="422" y="264" fill="#FFFFFF">Enquiries</text>
+      <text x="560" y="264" fill="#A99BD6" text-anchor="end">Simpler fix</text>
+    </g>
+    <rect x="388" y="296" width="182" height="1" fill="#3A3058"/>
+    <circle cx="396" cy="318" r="8" fill="#8B6CFF"/>
+    <path d="M392 318l3 3 5-6" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="412" y="322" fill="#A99BD6" font-size="10.5" font-weight="600">Reviewed by a person</text>
+  </g>
+</svg>

@@ -11,9 +11,10 @@ BIZ = "QAISEN"
 WORDMARK = '<span class="wordmark">QAISEN</span>'
 
 NAV = [
-    ("workshops.html", "Workshops"),
-    ("ux-audit.html", "UX Audit"),
+    ("ai-opportunity-assessment.html", "AI Assessment"),
     ("discovery-sprint.html", "Sprints"),
+    ("ux-audit.html", "UX Audit"),
+    ("workshops.html", "Workshops"),
     ("about.html", "About"),
     ("contact.html", "Contact"),
 ]
@@ -82,14 +83,16 @@ def footer():
     <div class="footer-grid">
       <div class="stack">
         <a class="brand" href="index.html" aria-label="QAISEN home">{WORDMARK}</a>
-        <p class="muted small" style="max-width:42ch">Human-centred design and GenAI capability for startups, SMEs and ICT teams in Singapore.</p>
+        <p class="muted small" style="max-width:42ch">Problem first. Outcomes by design. Fixed-price UX and AI diagnosis for Singapore businesses.</p>
       </div>
       <div>
         <h2>Services</h2>
         <ul class="footer-links">
-          <li><a href="workshops.html">Workshops</a></li>
-          <li><a href="ux-audit.html">UX Audit</a></li>
+          <li><a href="ai-opportunity-assessment.html#fit-check">AI Fit Check (coming soon)</a></li>
+          <li><a href="ai-opportunity-assessment.html">AI Opportunity Assessment</a></li>
           <li><a href="discovery-sprint.html">Discovery &amp; Design Sprints</a></li>
+          <li><a href="ux-audit.html">UX Audit</a></li>
+          <li><a href="workshops.html">Applied AI Workshops</a></li>
         </ul>
       </div>
       <div>
@@ -120,7 +123,7 @@ def footer():
 </html>
 """
 
-def cta_band(title="Not sure which one fits?", text="Book a 20-minute call. I'll tell you honestly which offer suits your situation, or whether you need one at all."):
+def cta_band(title="Not sure where to start?", text="Book a free 20-minute call. Tell me the business problem, and I'll tell you honestly whether AI is the right fix, which offer suits you, or whether you need one at all."):
     return f"""<section class="section-tight" aria-labelledby="cta-title">
   <div class="wrap">
     <div class="cta-band" data-reveal>

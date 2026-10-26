@@ -1,12 +1,12 @@
 /* ==========================================================
-   [Business Name] — Cool Professional
+   QAISEN — Cool Professional
    Light pages with deep "night" bands and gradient image tiles.
    ========================================================== */
-:root { --bg: #F5F4FA; --surface: #FFFFFF; --surface-2: #ECEAF4; --ink: #140F26; --body: #4B4762; --muted: #5E5A75; --line: #E2DFEC; --accent: #6A2CD8; --accent-hover: #5521B8; --on-accent: #FFFFFF; --tint: #EEE8FC; --on-tint: #2F2358; --tint-ink: #5A22C2; --focus: #6A2CD8; --shadow: 0 1px 2px rgba(20, 15, 38, .05), 0 12px 32px rgba(20, 15, 38, .08); --night: #0F0A1F; --night-2: #1A1333; --night-ink: #F5F3FB; --night-body: #C6C0DB; --night-line: rgba(255, 255, 255, .12); --night-accent: #B9A2FF; --grad-text: linear-gradient(100deg, #C2AEFF 0%, #8FB4FF 50%, #6FDCF5 100%); --grad-cta: linear-gradient(120deg, #4A1BB0 0%, #2B3AC4 55%, #0B6F96 100%); --g-violet: linear-gradient(145deg, #1F0D4A 0%, #5A23C8 100%); --g-blue: linear-gradient(145deg, #0E1C4F 0%, #3352E8 100%); --g-teal: linear-gradient(145deg, #062F3D 0%, #108BB0 100%); --g-magenta: linear-gradient(145deg, #2E0B40 0%, #9B2FC2 100%); --g-soft: linear-gradient(145deg, #EDE6FF 0%, #E3ECFF 55%, #DDF5FB 100%); --font: "Montserrat", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif; --r-xl: 32px; --r-lg: 24px; --r-md: 18px; --r-sm: 12px; --gutter: 32px; --header-h: 72px; }
+:root { --logo: #0B1F3A; --bg: #F5F4FA; --surface: #FFFFFF; --surface-2: #ECEAF4; --ink: #140F26; --body: #4B4762; --muted: #5E5A75; --line: #E2DFEC; --accent: #6A2CD8; --accent-hover: #5521B8; --on-accent: #FFFFFF; --tint: #EEE8FC; --on-tint: #2F2358; --tint-ink: #5A22C2; --focus: #6A2CD8; --shadow: 0 1px 2px rgba(20, 15, 38, .05), 0 12px 32px rgba(20, 15, 38, .08); --night: #0F0A1F; --night-2: #1A1333; --night-ink: #F5F3FB; --night-body: #C6C0DB; --night-line: rgba(255, 255, 255, .12); --night-accent: #B9A2FF; --grad-text: linear-gradient(100deg, #C2AEFF 0%, #8FB4FF 50%, #6FDCF5 100%); --grad-cta: linear-gradient(120deg, #4A1BB0 0%, #2B3AC4 55%, #0B6F96 100%); --g-violet: linear-gradient(145deg, #1F0D4A 0%, #5A23C8 100%); --g-blue: linear-gradient(145deg, #0E1C4F 0%, #3352E8 100%); --g-teal: linear-gradient(145deg, #062F3D 0%, #108BB0 100%); --g-magenta: linear-gradient(145deg, #2E0B40 0%, #9B2FC2 100%); --g-soft: linear-gradient(145deg, #EDE6FF 0%, #E3ECFF 55%, #DDF5FB 100%); --font: "Montserrat", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif; --r-xl: 32px; --r-lg: 24px; --r-md: 18px; --r-sm: 12px; --gutter: 32px; --header-h: 72px; }
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) { --bg: #0B0815; --surface: #151126; --surface-2: #1E1936; --ink: #F2EFFA; --body: #C0BAD6; --muted: #A49EBC; --line: #2A2442; --accent: #A98BFF; --accent-hover: #C2AEFF; --on-accent: #120B26; --tint: #211A3E; --on-tint: #DCD3FA; --tint-ink: #C2AEFF; --focus: #C2AEFF; --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 12px 32px rgba(0, 0, 0, .35); --night: #120D24; --night-2: #1C1534; --g-soft: linear-gradient(145deg, #1E1640 0%, #16204A 55%, #0E2B38 100%); color-scheme: dark; }
+  :root:not([data-theme="light"]) { --logo: #F2EFFA; --bg: #0B0815; --surface: #151126; --surface-2: #1E1936; --ink: #F2EFFA; --body: #C0BAD6; --muted: #A49EBC; --line: #2A2442; --accent: #A98BFF; --accent-hover: #C2AEFF; --on-accent: #120B26; --tint: #211A3E; --on-tint: #DCD3FA; --tint-ink: #C2AEFF; --focus: #C2AEFF; --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 12px 32px rgba(0, 0, 0, .35); --night: #120D24; --night-2: #1C1534; --g-soft: linear-gradient(145deg, #1E1640 0%, #16204A 55%, #0E2B38 100%); color-scheme: dark; }
 }
-:root[data-theme="dark"] { --bg: #0B0815; --surface: #151126; --surface-2: #1E1936; --ink: #F2EFFA; --body: #C0BAD6; --muted: #A49EBC; --line: #2A2442; --accent: #A98BFF; --accent-hover: #C2AEFF; --on-accent: #120B26; --tint: #211A3E; --on-tint: #DCD3FA; --tint-ink: #C2AEFF; --focus: #C2AEFF; --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 12px 32px rgba(0, 0, 0, .35); --night: #120D24; --night-2: #1C1534; --g-soft: linear-gradient(145deg, #1E1640 0%, #16204A 55%, #0E2B38 100%); color-scheme: dark; }
+:root[data-theme="dark"] { --logo: #F2EFFA; --bg: #0B0815; --surface: #151126; --surface-2: #1E1936; --ink: #F2EFFA; --body: #C0BAD6; --muted: #A49EBC; --line: #2A2442; --accent: #A98BFF; --accent-hover: #C2AEFF; --on-accent: #120B26; --tint: #211A3E; --on-tint: #DCD3FA; --tint-ink: #C2AEFF; --focus: #C2AEFF; --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 12px 32px rgba(0, 0, 0, .35); --night: #120D24; --night-2: #1C1534; --g-soft: linear-gradient(145deg, #1E1640 0%, #16204A 55%, #0E2B38 100%); color-scheme: dark; }
 /* ---------- Base ---------- */
 *, *::before, *::after { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; scroll-padding-top: calc(var(--header-h) + 16px); }
@@ -56,11 +56,12 @@ ul, ol { margin: 0; padding: 0; }
 .grid > * { min-width: 0; }
 .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 @media (max-width: 1023px) {
-  .grid-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .grid-3, .grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 719px) {
-  .grid-2, .grid-3 { grid-template-columns: 1fr; }
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
 }
 .split { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(28px, 5vw, 72px); align-items: start; }
 @media (max-width: 899px) {
@@ -702,4 +703,18 @@ html.lenis, html.lenis body { height: auto; }
 /* QAISEN wordmark (Zen Dots) — stands in for the logo until the logomark is ready */
 .wordmark { font-family: "Zen Dots", "Montserrat", system-ui, sans-serif; font-weight: 400; font-size: 1.375rem; letter-spacing: .06em; line-height: 1; color: var(--ink); }
 .site-footer .wordmark { color: inherit; }
-.site-header .wordmark { font-size: 1.65rem; }
+.site-header .wordmark { font-size: 1.65rem; color: var(--logo); }
+
+/* V0.2: approach steps as a list, "Also from QAISEN" row */
+ol.squiggle-stages { list-style: none; padding: 0; margin: 0; }
+.also { margin-top: clamp(36px, 5vw, 56px); display: flex; flex-direction: column; gap: 16px; }
+.also-card { flex-direction: row; align-items: center; gap: 20px; text-decoration: none; color: inherit; transition: box-shadow .25s ease, transform .25s ease; }
+.also-card .icon-badge { flex: none; }
+.also-copy { display: flex; flex-direction: column; gap: 6px; flex: 1; min-width: 0; }
+.also-copy .h4 { color: var(--ink); }
+.also-meta { font-size: .9375rem; font-weight: 700; color: var(--tint-ink); font-variant-numeric: tabular-nums; }
+.also-go { flex: none; width: 40px; height: 40px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-weight: 700; background: var(--surface-2); color: var(--ink); transition: transform .25s ease; }
+@media (hover: hover) { .also-card:hover { box-shadow: 0 0 0 1px var(--accent), 0 16px 40px rgba(20, 10, 50, .12); } .also-card:hover .also-go { transform: translateX(3px); } }
+.also-card:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
+@media (max-width: 479px) { .also-card { flex-direction: column; align-items: flex-start; } .also-go { display: none; } }
+#fit-check .hero-grid { align-items: center; }

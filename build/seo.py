@@ -16,34 +16,39 @@ LINKEDIN = "https://www.linkedin.com/in/ptrchw/"
 # fname: (title, description, keywords used to write the copy above; kept for reference)
 PAGES = {
     "index.html": (
-        f"UX & Product Innovation Consultant in Singapore | {BRAND}",
-        "Singapore UX and product innovation consultancy: fixed-price UX audits, design and discovery sprints, and GenAI workshops for startups, SMEs and ICT teams.",
-        ["UX consultant Singapore", "UX consultancy Singapore", "product innovation consultant", "GenAI workshops", "UX audit", "design sprint"],
+        f"Problem-First AI Diagnosis for Singapore Businesses | {BRAND}",
+        "Find out whether AI is the right fix before you spend on it. Fixed-price AI assessments, sprints, UX audits and AI workshops for Singapore businesses.",
+        ["AI consultant Singapore", "AI readiness assessment", "AI for SMEs Singapore", "AI opportunity assessment", "UX consultant Singapore", "design sprint"],
+    ),
+    "ai-opportunity-assessment.html": (
+        f"AI Opportunity Assessment for Singapore SMEs | {BRAND}",
+        "A fixed-price review of your key workflows, with a written answer on where AI could help, where it couldn't, and what to do next. Tool-neutral.",
+        ["AI opportunity assessment", "AI readiness assessment Singapore", "AI use case discovery", "AI for SMEs", "AI consultant Singapore", "AI fit check"],
+    ),
+    "discovery-sprint.html": (
+        f"Discovery & Design Sprints in Singapore | {BRAND}",
+        "Test whether AI is the right tool before you build: a Discovery Sprint with real users and a prototype, or a 4-day Design Sprint. From S$5,900.",
+        ["design sprint Singapore", "product discovery", "discovery sprint", "validate an AI idea", "prototype testing", "user research"],
     ),
     "ux-audit.html": (
         f"UX Audit for Websites & Apps in Singapore | {BRAND}",
         "Find out why users get stuck. An expert UX audit of three key journeys, backed by your customer feedback, plus a workshop to rank every fix. From S$5,000.",
         ["UX audit Singapore", "usability audit", "heuristic evaluation", "website UX review", "app UX review", "usability testing"],
     ),
-    "discovery-sprint.html": (
-        f"Design Sprint & Product Discovery in Singapore | {BRAND}",
-        "Know what's worth building before you build it: a 4-day Design Sprint or a Discovery Sprint with user interviews and real-user testing. From S$5,900.",
-        ["design sprint Singapore", "product discovery", "discovery sprint", "validate a product idea", "prototype testing", "user research"],
-    ),
     "workshops.html": (
-        f"GenAI & Design Thinking Workshops for Teams | {BRAND}",
-        "Hands-on GenAI workshops that train your team to use AI for design thinking and rapid prototyping on real challenges. Up to 10 people. From S$4,500.",
-        ["GenAI workshop Singapore", "AI training for teams", "design thinking workshop", "rapid prototyping workshop", "corporate AI training"],
+        f"Applied AI Workshops for Teams in Singapore | {BRAND}",
+        "Hands-on team training: your people learn to spot and test AI ideas with design thinking and rapid prototyping. 1–3 days, up to 10 people. From S$4,500.",
+        ["AI workshop Singapore", "AI training for teams", "design thinking workshop", "GenAI training", "rapid prototyping workshop", "corporate AI training"],
     ),
     "about.html": (
-        f"Peter Chow, UX Architect in Singapore | {BRAND}",
-        "Peter Chow is a Singapore UX architect and product innovation consultant with 20+ years across government, enterprise, fintech and education.",
-        ["Peter Chow UX", "UX architect Singapore", "product innovation consultant", "design thinking"],
+        f"Peter Chow, Founder of QAISEN | {BRAND}",
+        "Peter Chow is a Singapore UX architect and founder of QAISEN, with 20+ years turning complex problems into products and services people actually use.",
+        ["Peter Chow UX", "UX architect Singapore", "AI consultant Singapore", "design thinking"],
     ),
     "contact.html": (
-        f"Book a 20-Minute UX Consultation | {BRAND}",
-        "Book a free 20-minute call to find the right UX audit, sprint or GenAI workshop for your team, or message on WhatsApp or email. Based in Singapore.",
-        ["UX consultation Singapore", "book a UX consultant", "contact"],
+        f"Book a Free 20-Minute Call | {BRAND}",
+        "Book a free 20-minute call to find out whether AI is the right fix for your business problem, and which offer suits you. Or message on WhatsApp or email.",
+        ["AI consultation Singapore", "book an AI consultant", "UX consultation Singapore", "contact"],
     ),
 }
 
@@ -51,17 +56,19 @@ ORG_ID = SITE_URL + "/#org"
 PERSON_ID = SITE_URL + "/about.html#peter"
 
 SERVICES = [
-    # (page, name, serviceType, description, lowPrice, highPrice)
+    # (page, name, serviceType, description, lowPrice, highPrice); prices None until set
+    ("ai-opportunity-assessment.html", "AI Opportunity Assessment", "AI opportunity and readiness assessment",
+     "A fixed-price review of up to three key workflows with a written answer on where AI fits, partly fits or doesn't.", None, None),
     ("ux-audit.html", "UX Audit", "UX audit and usability review",
      "Expert heuristic review and flow audit of three key journeys, backed by customer feedback, with a prioritisation workshop.", 5000, 7500),
     ("discovery-sprint.html", "Discovery & Design Sprints", "Design sprint and product discovery",
      "A 4-day Design Sprint or a Discovery Sprint of up to 5 weeks to test ideas with real users before you build.", 5900, 8700),
-    ("workshops.html", "Applied AI for Design Thinking and Rapid Prototyping workshops", "GenAI and design thinking training",
+    ("workshops.html", "Applied AI Workshops", "AI and design thinking team training",
      "Hands-on, in-house workshops of one to three days for up to 10 people.", 4500, 10500),
 ]
 
 CRUMB_NAMES = {
-    "ux-audit.html": "UX Audit", "discovery-sprint.html": "Sprints", "workshops.html": "Workshops",
+    "ai-opportunity-assessment.html": "AI Opportunity Assessment", "ux-audit.html": "UX Audit", "discovery-sprint.html": "Sprints", "workshops.html": "Workshops",
     "about.html": "About", "contact.html": "Contact",
 }
 
@@ -81,7 +88,7 @@ def _org():
         "areaServed": {"@type": "Country", "name": "Singapore"},
         "address": {"@type": "PostalAddress", "addressCountry": "SG"},
         "founder": {"@id": PERSON_ID},
-        "knowsAbout": ["User experience design", "UX audit", "Usability testing", "Design sprint",
+        "knowsAbout": ["AI opportunity assessment", "AI readiness", "User experience design", "UX audit", "Usability testing", "Design sprint",
                        "Product discovery", "Design thinking", "Generative AI", "Rapid prototyping"],
         "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Fixed-scope services", "itemListElement": [
             {"@type": "Offer", "itemOffered": {"@type": "Service", "name": n, "url": url(p)}} for p, n, *_ in SERVICES]},
@@ -107,9 +114,11 @@ def jsonld(fname, body):
             {"@type": "ListItem", "position": 2, "name": CRUMB_NAMES.get(fname, fname), "item": url(fname)}]})
     for p, name, stype, desc, lo, hi in SERVICES:
         if p == fname:
-            graph.append({"@type": "Service", "name": name, "serviceType": stype, "description": desc, "url": url(p),
-                          "provider": {"@id": ORG_ID}, "areaServed": {"@type": "Country", "name": "Singapore"},
-                          "offers": {"@type": "AggregateOffer", "priceCurrency": "SGD", "lowPrice": lo, "highPrice": hi}})
+            svc = {"@type": "Service", "name": name, "serviceType": stype, "description": desc, "url": url(p),
+                   "provider": {"@id": ORG_ID}, "areaServed": {"@type": "Country", "name": "Singapore"}}
+            if lo is not None:
+                svc["offers"] = {"@type": "AggregateOffer", "priceCurrency": "SGD", "lowPrice": lo, "highPrice": hi}
+            graph.append(svc)
     if fname == "about.html":
         graph.append({"@type": "ProfilePage", "url": url(fname), "mainEntity": _person()})
     faqs = re.findall(r"<summary>(.*?)</summary>\s*<div class=\"answer\">(.*?)</div>", body, re.S)
