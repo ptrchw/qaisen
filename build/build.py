@@ -83,7 +83,7 @@ def footer():
     <div class="footer-grid">
       <div class="stack">
         <a class="brand" href="index.html" aria-label="QAISEN home">{WORDMARK}</a>
-        <p class="muted small" style="max-width:42ch">Problem first. Outcomes by design. Fixed-price UX and AI diagnosis for Singapore businesses.</p>
+        <p class="muted small" style="max-width:42ch">Problem first. Outcomes by design. Fixed-price UX and AI diagnosis for Singapore SMEs.</p>
       </div>
       <div>
         <h2>Services</h2>

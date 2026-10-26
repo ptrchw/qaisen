@@ -17,7 +17,7 @@ LINKEDIN = "https://www.linkedin.com/in/ptrchw/"
 PAGES = {
     "index.html": (
         f"Problem-First AI Diagnosis for Singapore Businesses | {BRAND}",
-        "Find out whether AI is the right fix before you spend on it. Fixed-price AI assessments, sprints, UX audits and AI workshops for Singapore businesses.",
+        "Find out whether AI is the right fix before you spend on it. Fixed-price AI assessments, sprints, UX audits and AI workshops for Singapore SMEs.",
         ["AI consultant Singapore", "AI readiness assessment", "AI for SMEs Singapore", "AI opportunity assessment", "UX consultant Singapore", "design sprint"],
     ),
     "ai-opportunity-assessment.html": (
@@ -38,7 +38,7 @@ PAGES = {
     "workshops.html": (
         f"Applied AI Workshops for Teams in Singapore | {BRAND}",
         "Hands-on team training: your people learn to spot and test AI ideas with design thinking and rapid prototyping. 1–3 days, up to 10 people. From S$4,500.",
-        ["AI workshop Singapore", "AI training for teams", "design thinking workshop", "GenAI training", "rapid prototyping workshop", "corporate AI training"],
+        ["AI workshop Singapore", "AI training for teams", "design thinking workshop", "GenAI training", "rapid prototyping workshop", "AI training for SMEs"],
     ),
     "about.html": (
         f"Peter Chow, Founder of QAISEN | {BRAND}",
