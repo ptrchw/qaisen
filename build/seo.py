@@ -22,7 +22,7 @@ PAGES = {
     ),
     "ai-opportunity-assessment.html": (
         f"AI Opportunity Assessment for Singapore SMEs | {BRAND}",
-        "A fixed-price review of your key workflows, with a written answer on where AI could help, where it couldn't, and what to do next. Tool-neutral.",
+        "A fixed-price review of your key workflows, ending in an AI Insights Report on where AI could help, where it couldn't, and what to do next. Tool-neutral.",
         ["AI opportunity assessment", "AI readiness assessment Singapore", "AI use case discovery", "AI for SMEs", "AI consultant Singapore", "AI reality check"],
     ),
     "discovery-sprint.html": (
@@ -58,7 +58,7 @@ PERSON_ID = SITE_URL + "/about.html#peter"
 SERVICES = [
     # (page, name, serviceType, description, lowPrice, highPrice); prices None until set
     ("ai-opportunity-assessment.html", "AI Opportunity Assessment", "AI opportunity and readiness assessment",
-     "A fixed-price review of up to three key workflows with a written answer on where AI fits, partly fits or doesn't.", None, None),
+     "A fixed-price review of up to three key workflows ending in an AI Insights Report on where AI fits, partly fits or doesn't.", None, None),
     ("ux-audit.html", "UX Audit", "UX audit and usability review",
      "Expert heuristic review and flow audit of three key journeys, backed by customer feedback, with a prioritisation workshop.", 5000, 7500),
     ("discovery-sprint.html", "Discovery & Design Sprints", "Design sprint and product discovery",
