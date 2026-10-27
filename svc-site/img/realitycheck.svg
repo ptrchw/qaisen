@@ -25,7 +25,7 @@
   <!-- result card -->
   <g filter="url(#s)">
     <rect x="356" y="128" width="226" height="210" rx="16" fill="#1B1433"/>
-    <text x="376" y="160" fill="#FFFFFF" font-size="14" font-weight="700">Your result</text>
+    <text x="376" y="160" fill="#FFFFFF" font-size="14" font-weight="700">AI Reality Report</text>
     <path d="M405 252a64 64 0 0 1 128 0" fill="none" stroke="#3A3058" stroke-width="14" stroke-linecap="round"/>
     <path d="M405 252a64 64 0 0 1 104-50" fill="none" stroke="#5BC8F0" stroke-width="14" stroke-linecap="round"/>
     <text x="469" y="244" fill="#FFFFFF" font-size="16" font-weight="700" text-anchor="middle">Likely fit</text>
