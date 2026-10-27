@@ -755,3 +755,6 @@ ol.squiggle-stages { list-style: none; padding: 0; margin: 0; }
 .legal ul { list-style: disc; }
 .legal ol { list-style: decimal; }
 .legal li::marker { color: var(--accent); }
+.legal-dates { color: var(--night-body); }
+.legal h2:first-child { margin-top: 0; }
+.legal a { overflow-wrap: anywhere; }
