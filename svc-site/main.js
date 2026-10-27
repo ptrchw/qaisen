@@ -29,19 +29,30 @@ var SITE = {
     try { return !!document.referrer && new URL(document.referrer).origin === location.origin; } catch (e) { return false; }
   }
   var internalNav = cameFromThisSite();
+  var framed = false;
+  try { framed = window.self !== window.top; } catch (e) { framed = true; }
   function toTop() {
     if (location.hash && location.hash.length > 1) return;
     window.scrollTo(0, 0);
-    if (internalNav) {
+    doc.scrollTop = 0;
+    if (document.body) document.body.scrollTop = 0;
+    if (internalNav || framed) {
       // Also scrolls any outer frame or viewer container back to this page's top
       var pad = doc.style.scrollPaddingTop;
       doc.style.scrollPaddingTop = '0px';
       try { doc.scrollIntoView({ block: 'start', inline: 'nearest' }); } catch (e) { doc.scrollIntoView(true); }
       doc.style.scrollPaddingTop = pad;
     }
+    if (window.__qLenis) { try { window.__qLenis.scrollTo(0, { immediate: true, force: true }); } catch (e) {} }
   }
   toTop();
-  window.addEventListener('load', toTop);
+  document.addEventListener('DOMContentLoaded', toTop);
+  window.addEventListener('load', function () {
+    toTop();
+    // Late layout shifts (fonts, images) can nudge the position: settle once more
+    requestAnimationFrame(toTop);
+    setTimeout(toTop, 150);
+  });
   window.addEventListener('pageshow', function (e) { if (e.persisted) toTop(); });
   // Mark clicks on links to other pages of this site
   document.addEventListener('click', function (e) {
@@ -150,6 +161,8 @@ var SITE = {
   if (!reduceMotion && finePointer && typeof window.Lenis === 'function') {
     try {
       lenis = new window.Lenis({ duration: 1.05, smoothWheel: true });
+      window.__qLenis = lenis;
+      if (!(location.hash && location.hash.length > 1)) lenis.scrollTo(0, { immediate: true, force: true });
       if (window.gsap && window.ScrollTrigger) {
         lenis.on('scroll', window.ScrollTrigger.update);
         window.gsap.ticker.add(function (time) { lenis.raf(time * 1000); });
