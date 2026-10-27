@@ -45,6 +45,16 @@ PAGES = {
         "Peter Chow is a Singapore UX architect and founder of QAISEN, with 20+ years turning complex problems into products and services people actually use.",
         ["Peter Chow UX", "UX architect Singapore", "AI consultant Singapore", "design thinking"],
     ),
+    "terms.html": (
+        f"Terms of Use | {BRAND}",
+        "The terms that apply when you use the QAISEN website and the free AI Reality Check.",
+        ["terms of use"],
+    ),
+    "privacy.html": (
+        f"Privacy Policy | {BRAND}",
+        "How QAISEN collects, uses and protects your personal data under Singapore's Personal Data Protection Act (PDPA).",
+        ["privacy policy", "PDPA"],
+    ),
     "contact.html": (
         f"Book a Free 20-Minute Call | {BRAND}",
         "Book a free 20-minute call to find out whether AI is the right fix for your business problem, and which offer suits you. Or message on WhatsApp or email.",
@@ -69,7 +79,7 @@ SERVICES = [
 
 CRUMB_NAMES = {
     "ai-opportunity-assessment.html": "AI Opportunity Assessment", "ux-audit.html": "UX Audit", "discovery-sprint.html": "Sprints", "workshops.html": "Workshops",
-    "about.html": "About", "contact.html": "Contact",
+    "about.html": "About", "contact.html": "Contact", "terms.html": "Terms of Use", "privacy.html": "Privacy Policy",
 }
 
 
